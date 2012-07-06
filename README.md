@@ -40,3 +40,12 @@ class PopularityRules
   end
 end
 ```
+
+## Supported ORMS
+
+- Mongoid
+
+## TODO
+
+- Add support for ActiveRecord
+- Add rake tasks to migrate popular models after defining rules
