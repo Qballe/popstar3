@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Matteo Depalo","Eugenio Depalo"]
   s.email       = ["matteodepalo@gmail.com"]
   s.homepage    = "https://github.com/matteodepalo/popstar"
-  s.summary     = "Simple Rails engine to implement a popularity system for your models."
-  s.description = "Simple Rails engine to implement a popularity system for your models."
+  s.summary     = "Popularity system for your Rails models."
+  s.description = "Popstar lets you add rules to determine your rails models popularity."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
 
