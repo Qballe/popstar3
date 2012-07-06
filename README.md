@@ -2,6 +2,8 @@
 
 Popularity system for your Rails models.
 
+[![Build Status](https://secure.travis-ci.org/matteodepalo/popstar.png?branch=master)](http://travis-ci.org/matteodepalo/popstar)
+
 ## Installation
 
 Put this in your gemfile:
