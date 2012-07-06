@@ -6,7 +6,11 @@ describe Popstar::Popularity do
 
     popular_class = Class.new do
       include Popstar::Popularity
-      popularity_for(:question) { }
+      def initialize
+        popularity_for(:question) { }
+      end
     end
+
+    popular_class.new
   end
 end
