@@ -8,7 +8,7 @@ Popularity system for your Rails models.
 
 Put this in your gemfile:
 
-`gem 'popstar', :git => 'git://github.com/matteodepalo/popstar.git'`
+`gem 'popstar'`
 
 ## Usage
 
