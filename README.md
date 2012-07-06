@@ -12,6 +12,8 @@ Define your badge rules in a PopularityRules class
 
 ```
 class PopularityRules
+  include Popstar::Popularity
+
   def initialize
     popularity_for :voteable do
       on :create, Vote, :rate => proc { |vote| vote.rate*2 }
