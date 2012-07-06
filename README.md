@@ -6,7 +6,7 @@ Popularity system for your Rails models.
 
 Put this in your gemfile:
 
-`gem 'popstar'`
+`gem 'popstar', :git => 'git://github.com/matteodepalo/popstar.git'`
 
 Define your badge rules in a PopularityRules class
 
