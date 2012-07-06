@@ -1,0 +1,23 @@
+$:.push File.expand_path("../lib", __FILE__)
+
+# Maintain your gem's version:
+require "popstar/version"
+
+# Describe your gem and declare its dependencies:
+Gem::Specification.new do |s|
+  s.name        = "popstar"
+  s.version     = Popstar::VERSION
+  s.authors     = ["Matteo Depalo","Eugenio Depalo"]
+  s.email       = ["matteodepalo@gmail.com"]
+  s.homepage    = "https://github.com/matteodepalo/popstar"
+  s.summary     = "Simple Rails engine to implement a popularity system for your models."
+  s.description = "Simple Rails engine to implement a popularity system for your models."
+
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+
+  s.add_dependency "rails", "~> 3.2.6"
+  s.add_dependency "mongoid", "~> 2.4.0"
+  s.add_dependency "bson_ext"
+  s.add_development_dependency "rspec-rails"
+  s.add_development_dependency 'mongoid-rspec'
+end
