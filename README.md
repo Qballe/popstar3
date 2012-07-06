@@ -11,7 +11,7 @@ Put this in your gemfile:
 Define your badge rules in a PopularityRules class
 
 ```
-class Popularity
+class PopularityRules
   def initialize
     popularity_for :voteable do
       on :create, Vote, :rate => proc { |vote| vote.rate*2 }
