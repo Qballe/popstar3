@@ -10,6 +10,8 @@ Put this in your gemfile:
 
 `gem 'popstar', :git => 'git://github.com/matteodepalo/popstar.git'`
 
+## Usage
+
 Define your badge rules in a PopularityRules class
 
 ```
