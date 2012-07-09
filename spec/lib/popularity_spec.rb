@@ -11,6 +11,6 @@ describe Popstar::Popularity do
       end
     end
 
-    popular_class.new
+    popular_class.instance
   end
 end
