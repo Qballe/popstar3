@@ -1,1 +1,1 @@
-PopularityRules.new
+PopularityRules.instance
