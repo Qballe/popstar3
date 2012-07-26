@@ -8,7 +8,7 @@ module Popstar
           rules.each do |rule|
             if rule[:action] == :create
               rule[:model].all.each do |model|
-                model.send(target).inc(:popularity, rule[:rate])
+                model.send(target).inc(:popularity, rule[:rate].call(model))
               end
             end
           end
