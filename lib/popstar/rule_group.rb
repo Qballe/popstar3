@@ -21,6 +21,8 @@ module Popstar
 
       target = @target
 
+      Popstar::Migration.rules[target] << { :action => action, :model => model, :rate => rate }
+
       increase_popularity = proc do |model|
         model.send(target).inc(:popularity, rate.call(model))
       end
