@@ -22,9 +22,9 @@ module Popstar
       target = @target
 
       if Popstar::Migration.rules[target].present?
-        Popstar::Migration.rules[target] << { :action => action, :model => model, :rate => rate }
+        Popstar::Migration.rules[target] << { :action => action, :model => model, :rate => rate.call }
       else
-        Popstar::Migration.rules[target] = [{ :action => action, :model => model, :rate => rate }]
+        Popstar::Migration.rules[target] = [{ :action => action, :model => model, :rate => rate.call }]
       end
 
       increase_popularity = proc do |model|
