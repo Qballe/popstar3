@@ -10,21 +10,21 @@ describe Popstar::RuleGroup do
       include Mongoid::Document
       include Popstar::Popular
 
-      has_many :votes, :class_name => 'DummyVote'
+      has_many :votes, :class_name => 'DummyVote', :inverse_of => :question
     end
 
     class DummyVote
       include Mongoid::Document
 
-      belongs_to :question, :class_name => 'DummyQuestion'
-      belongs_to :comment, :class_name => 'DummyComment'
+      belongs_to :question, :class_name => 'DummyQuestion', :inverse_of => :votes
+      belongs_to :comment, :class_name => 'DummyComment', :inverse_of => :votes
     end
 
     class DummyComment
       include Mongoid::Document
       include Popstar::Popular
 
-      has_many :votes, :class_name => 'DummyVote'
+      has_many :votes, :class_name => 'DummyVote', :inverse_of => :comment
     end
   end
 
