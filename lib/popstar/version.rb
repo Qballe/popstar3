@@ -1,3 +1,3 @@
 module Popstar
-  VERSION = "0.0.3.7"
+  VERSION = "0.0.4.0"
 end
