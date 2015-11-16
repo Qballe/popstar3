@@ -7,9 +7,9 @@ require "popstar/version"
 Gem::Specification.new do |s|
   s.name        = "popstar"
   s.version     = Popstar::VERSION
-  s.authors     = ["Matteo Depalo","Eugenio Depalo"]
-  s.email       = ["matteodepalo@gmail.com"]
-  s.homepage    = "https://github.com/matteodepalo/popstar"
+  s.authors     = ["Alex Zanardo","Matteo Depalo","Eugenio Depalo"]
+  s.email       = ["info@alexzanardo.com"]
+  s.homepage    = "https://github.com/responsa/popstar"
   s.summary     = "Popularity system for your Rails models."
   s.description = "Popstar lets you add rules to determine your rails models popularity."
 
