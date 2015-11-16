@@ -1,6 +1,6 @@
-namespace :popstar do
+namespace :popstar3 do
   desc "Migrates the database to new popularity rules"
   task :migrate => :environment do
-    Popstar::Migration.up
+    Popstar3::Migration.up
   end
 end

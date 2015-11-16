@@ -1,14 +1,16 @@
-# Popstar
+# Popstar3
+Mongoid >= 3.0.0 support of [Popstar repo][lps]
+
+____________________________________
+
 
 Popularity system for your Rails models.
-
-[![Build Status](https://secure.travis-ci.org/matteodepalo/popstar.png?branch=master)](http://travis-ci.org/matteodepalo/popstar)
 
 ## Installation
 
 Put this in your gemfile:
 
-`gem 'popstar'`
+`gem 'popstar3'`
 
 ## Usage
 
@@ -16,7 +18,7 @@ Define your badge rules in a PopularityRules class
 
 ```
 class PopularityRules
-  include Popstar::Popularity
+  include Popstar3::Popularity
 
   def initialize
     popularity_for :voteable do
@@ -43,9 +45,12 @@ end
 
 ## Supported ORMS
 
-- Mongoid
+- Mongoid >= 3.0.0
 
 ## TODO
 
 - Add support for ActiveRecord
 - Add rake tasks to migrate popular models after defining rules
+
+
+[lps]: <https://github.com/responsa/popstar>

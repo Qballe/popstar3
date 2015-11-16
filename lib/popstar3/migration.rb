@@ -1,4 +1,4 @@
-module Popstar
+module Popstar3
   class Migration
     @@rules = {}
 

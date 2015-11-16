@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Popstar::RuleGroup do
+describe Popstar3::RuleGroup do
   before(:each) do
     [:DummyQuestion, :DummyVote, :DummyComment].each do |model_class|
       Object.send(:remove_const, model_class) if Object.const_defined?(model_class)
@@ -8,7 +8,7 @@ describe Popstar::RuleGroup do
 
     class DummyQuestion
       include Mongoid::Document
-      include Popstar::Popular
+      include Popstar3::Popular
 
       has_many :votes, :class_name => 'DummyVote', :inverse_of => :question
     end
@@ -22,21 +22,21 @@ describe Popstar::RuleGroup do
 
     class DummyComment
       include Mongoid::Document
-      include Popstar::Popular
+      include Popstar3::Popular
 
       has_many :votes, :class_name => 'DummyVote', :inverse_of => :comment
     end
   end
 
-  let(:group) { Popstar::RuleGroup.new(:question) }
+  let(:group) { Popstar3::RuleGroup.new(:question) }
   let(:question) { DummyQuestion.create! }
   let(:comment) { DummyComment.create! }
 
   it "should call the block associated to a group" do
     block_group = nil
 
-    test_group = Popstar::RuleGroup.new(:question) do
-      block_group = self  
+    test_group = Popstar3::RuleGroup.new(:question) do
+      block_group = self
     end
 
     block_group.should be(test_group)

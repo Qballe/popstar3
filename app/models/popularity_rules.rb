@@ -1,5 +1,5 @@
 class PopularityRules
-  include Popstar::Popularity
+  include Popstar3::Popularity
 
   def initialize
   end

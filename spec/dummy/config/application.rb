@@ -9,7 +9,7 @@ require "active_resource/railtie"
 # require "rails/test_unit/railtie"
 
 Bundler.require
-require "popstar"
+require "popstar3"
 
 module Dummy
   class Application < Rails::Application

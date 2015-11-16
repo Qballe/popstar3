@@ -1,4 +1,4 @@
-module Popstar
+module Popstar3
   module Popularity
     def self.included(base)
       base.send :include, Singleton
